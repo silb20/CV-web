@@ -135,7 +135,7 @@ img {
 .accent-text {
     color: var(--pine-teal);
     font-size: 2rem;
-    text-shadow: 0 0 2px var(--sea-green);
+    /* text-shadow: 0 0 2px var(--sea-green); */
 }
 
 .photo {
@@ -160,11 +160,13 @@ img {
 }
 
 .sub-block {
-    
+	border: 2px solid var(--ash-grey);
+	background-color: var(--ghost-white);
+	border-radius: var(--round-corner);
+	padding: 1rem;
+	box-shadow: 0 0 9px var(--ash-grey);
+    margin: 1rem 0;
 }
-
-
-
 
 
 
