@@ -1,0 +1,161 @@
+/*  fonts */
+
+/* // <weight>: Use a value from 100 to 900  !!! 400, 500, 600
+// <uniquifier>: Use a unique and descriptive class name */
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*  variables */
+:root {
+    --onyx: #121619;
+    --pine-teal: #2D4739;
+    --sea-green: #09814A;
+    --eggshell: #FAF3DD;
+    --ghost-white: #F6F8FF;
+    --ash-grey: #CBD4C2;
+    --porcelain: #F5F7F3;
+    --round-corner: .5rem;
+    --border-size: 3px;
+}
+
+/* reset */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: 100px;
+}
+
+.contenedor {
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--porcelain);
+    color: var(--onyx);
+}
+
+/* ESTILO NAV */
+
+.title-site {
+    font-size: 1.5rem;
+}
+
+.first-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: var(--pine-teal);
+    color: var(--eggshell);
+    padding: .5rem 1rem;
+    align-items: center;
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+}
+
+.menu-icon {
+    font-size: 2.5rem;
+    position: relative;
+}
+
+#ck_menu {
+    display: none;
+}
+
+.menu {
+    position: absolute;
+    right: 60px;
+    top: 50px;
+    background-color: var(--eggshell);
+    border-radius: var(--round-corner);
+    transform: scale(0);
+    transition: all .5s ease;
+    transform-origin: top right;
+}
+
+.main-nav-bar li {
+    list-style: none;
+}
+
+.menu-item {
+    text-decoration: none;
+    display: block;
+    border: 1px solid;
+    border-radius: var(--round-corner);
+    text-align: center;
+    padding: .3rem .5rem;
+    margin: .2rem;
+    color: var(--eggshell);
+    background-color: var(--pine-teal);
+}
+
+#ck_menu:checked+.menu {
+    transform: scale(1);
+    position: absolute;
+    z-index: 3;
+    opacity: 1;
+}
+
+/* MAIN BODY */
+
+.head-group {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.title-main {
+    width: 50%;
+    margin: auto;
+}
+
+.title-description {
+    
+}
+
+.accent-text {
+    color: var(--pine-teal);
+    font-size: 2rem;
+}
+
+.photo {
+    display: block;
+    margin: 1rem auto;
+    height: 120px;
+    width: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: 0 37%;
+    border-radius: 50%;
+    border: 3px solid var(--pine-teal);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

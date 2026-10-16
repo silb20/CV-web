@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/216960cfff.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <header class="first-header">
+            <h1 class="title-site">Silvia Beut</h1>
+            <div class="navegacion">
+                <label for="ck_menu" class="menu-icon"><span class="fa-solid fa-bars"></span></label>
+                <input type="checkbox" name="ck_menu" id="ck_menu">
+                <nav class="menu">
+                    <ul class="main-nav-bar">
+                        <li><a href="education-experience.html" class="menu-item">Estudios y experiencia</a></li>
+                        <li><a href="examples.html" class="menu-item">Ejemplos prácticos</a></li>
+                        <li><a href="about-me.html" class="menu-item">Sobre mi</a></li>
+                        <li><a href="contact.html" class="menu-item">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <header class="main-header">
+                <img src="imgs/foto_perfil.jpeg" alt="Mi foto de perfil" title="Foto de perfil de Silvia" class="photo">
+                <div class="head-group">
+                    <h2 class="title-main">Hola, soy <span class="accent-text">Silvia Beut</span></h2>
+                    <p class="title-description">Estudiante de Confección y Publicación de Páginas Web, con conocimientos de HTML, CSS y JavaScript. </p>
+                </div>
+            </header>
+            <section class="main-blocks">
+                <h2 class="section-title">Educación</h2>
+                <article>
+                    <h3 class="sect-subtitle">Confección y publicación de páginas web</h3>
+                    <p class="description">Certificado de profesionalidad Nivel 2 (en curso)</p>
+                    <ul class="info-list">
+                        <li>Conocimiento de HTML, CSS y JavaScript</li>
+                        <li>Maquetación web avanzada</li>
+                        <li>Creación de interfaces adaptables con HTML y CSS</li>
+                        <li>Desarrollo de funcionalidades interactivas</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3 class="sect-subtitle">Grado en Física</h3>
+                    <p class="description">UNED (en curso)</p>
+                    <ul class="info-list">
+                        <li>Actualmente cursando asignaturas avanzadas de tercer y cuarto año</li>
+                        <li>Formación en física y matemáticas</li>
+                        <li>Conocimientos básicos de programación en C++ y MATLAB</li>
+                        <li>Experiencia en análisis científico y resolución de problemas</li>
+                    </ul>
+                </article>
+            </section>
+            <section class="main-blocks">
+                <h2 class="section-title">Proyectos</h2>
+                <article class="sub-block">
+                    <h3 class="sect-subtitle">Ejemplos de habilidades de HTML, CSS y JavaScript</h3>
+                    <div class="ejemplo"></div>
+                    <div class="ejemplo"></div>
+                    <div class="ejemplo"></div>
+                    <div class="ejemplo"></div>
+                </article>
+            </section>
+            <section class="main-blocks">
+                <h2 class="section-title">Experiencia</h2>
+                <article class="sub-block">
+                    <h3 class="sect-subtitle">Profesora particular de matemáticas, física y química</h3>
+                    <p class="description">Academia Bussola (2018-2024)</p>
+                    <ul class="info-list">
+                        <li>Apoyo académico a estudiantes de ESO y Bachillerato</li>
+                        <li>Preparación de ejercicios y refuerzo de conceptos científicos</li>
+                        <li>Seguimiento individualizado y adaptación al nivel del alumno</li>
+                        <li>Mejora de hábitos de estudio y autonomía académica</li>
+                        <li>Comunicación con familias sobre progreso académico</li>
+                        <li>Gestión básica de cobros y organización de horarios</li>
+                    </ul>
+                </article>
+            </section>
+            <section class="main-blocks">
+                <h2 class="section-title">Otros</h2>
+                <article class="sub-block">
+                    <h3 class="sect-subtitle">Idiomas</h3>
+                    <ul>
+                        <li>Español - nativo</li>
+                        <li>Valenciano - nativo</li>
+                        <li>Inglés - B2+/C1 funcional (uso frecuente oral, escrito y técnico)</li>
+                        <li>Francés - A2</li>
+                    </ul>
+                </article>
+                <article class="sub-block">
+                    <h3 class="sect-subtitle">Habilidades</h3>
+                    <ul>
+                        <li>Microsoft 365 y Google Workspace</li>
+                        <li>MATLAB (nivel básico)</li>
+                        <li>C++ (nivel básico)</li>
+                        <li>Resolución de dudas e incidencias</li>
+                        <li>Atencion presencial y telefónica</li>
+                        <li>Organización de horarios y gestión básica adminisrativa</li>
+                        <li>Pensamiento analítico</li>
+                        <li>Capacidad de aprendizaje</li>
+                        <li>Trabajo autónomo y responsabilidad</li>
+                        <li>Adaptación a diferentes tareas y entornos</li>
+                    </ul>
+                </article>
+            </section>
+            <section class="main-blocks">
+                <h2 class="section-title">Sobre mi</h2>
+                <article class="sub-block"></article>
+            </section>
+            <section class="main-blocks">
+                <h2 class="section-title">Contacto</h2>
+                <article class="sub-block">
+                    <form action="#" method="get">
+                        <fieldset class="cont-flex-row">
+                            <div class="form-block cont-flex-col">
+                                <label for="f_nombre">Nombre</label>
+                                <input type="text" name="f_nombre" id="f_nombre">
+                            </div>
+                            <div class="form-block cont-flex-col">
+                                <label for="f_apellidos">Apellidos</label>
+                                <input type="text" name="f_apellidos" id="f_apellidos">
+                            </div>
+                            <div class="form-block cont-flex-col">
+                                <label for="f_telefono">Telefono</label>
+                                <input type="tel" name="f_telefono" id="f_telefono">
+                            </div>
+                            <div class="form-block cont-flex-col">
+                                <label for="f_mail">e-mail</label>
+                                <input type="email" name="f_mail" id="f_mail">
+                            </div>
+                            <div class="form-block cont-flex-col comment">
+                                <p>Comentario</p>
+                                <textarea name="f_comment" id="f_comment"
+                                    placeholder="Escribe aquí tu comment"></textarea>
+                            </div>
+                            <div class="form-block">
+                                <input type="submit" value="Enviar" class="boton">
+                            </div>
+                        </fieldset>
+                    </form>
+                </article>
+            </section>
+
+        </main>
+        <footer></footer>
+    </div>
+
+</body>
+
+</html>
