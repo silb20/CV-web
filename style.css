@@ -10,6 +10,14 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "font-awesome";
+    src: url(webfonts/fa-solid-900.woff2) format('woff2'),
+        url(webfonts/fa-regular-400.woff2) format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
 /*  variables */
 :root {
     --onyx: #121619;
@@ -114,7 +122,6 @@ img {
 /* MAIN BODY */
 
 .main-header {
-    border-bottom: 3px solid var(--pine-teal);
     padding: var(--main-padding);
 }
 
@@ -152,6 +159,7 @@ img {
 
 .main-blocks {
     padding: var(--main-padding);
+    border-top: 3px solid var(--pine-teal);
 }
 
 .section-title {
@@ -160,31 +168,22 @@ img {
 }
 
 .sub-block {
-	border: 2px solid var(--ash-grey);
-	background-color: var(--ghost-white);
-	border-radius: var(--round-corner);
-	padding: 1rem;
-	box-shadow: 0 0 9px var(--ash-grey);
+    border: 2px solid var(--ash-grey);
+    background-color: var(--ghost-white);
+    border-radius: var(--round-corner);
+    padding: 1rem;
+    box-shadow: 0 0 9px var(--ash-grey);
     margin: 1rem 0;
 }
 
+.info-list li {
+    list-style: none;
+    padding: .5rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.info-list li::before {
+    content: "\f105";
+    font-family: "font-awesome";
+    font-weight: 900;
+    padding-right: 1rem;
+}
