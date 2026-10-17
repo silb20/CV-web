@@ -68,6 +68,8 @@ img {
     color: var(--eggshell);
     padding: .5rem var(--main-padding);
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 .navegacion {
@@ -110,6 +112,7 @@ img {
     margin: .2rem;
     color: var(--eggshell);
     background-color: var(--pine-teal);
+    width: 200px;
 }
 
 #ck_menu:checked+.menu {
@@ -121,6 +124,8 @@ img {
 
 /* MAIN BODY */
 
+/* Main header */
+
 .main-header {
     padding: var(--main-padding);
 }
@@ -131,7 +136,7 @@ img {
 }
 
 .title-main {
-    width: 55%;
+    width: 200px;
     margin: auto;
 }
 
@@ -157,9 +162,12 @@ img {
     border: 3px solid var(--pine-teal);
 }
 
+/* START SECTIONS */
+
 .main-blocks {
-    padding: var(--main-padding);
+    padding: var(--main-padding) 0;
     border-top: 3px solid var(--pine-teal);
+    margin: 0 1rem;
 }
 
 .section-title {
@@ -186,4 +194,80 @@ img {
     font-family: "font-awesome";
     font-weight: 900;
     padding-right: 1rem;
+}
+
+.sect-subtitle {
+    padding: 0 0 .5rem;
+}
+
+.description {
+    padding: 0 0 1rem;
+}
+
+/* NEW SCREEN RESOLUTION */
+
+@media (min-width: 700px) {
+    .menu-icon {
+        display: none;
+    }
+
+    .navegacion {
+        display: block;
+    }
+
+    .menu {
+        background-color: var(--pine-teal);
+        border-radius: var(--round-corner);
+        transform: scale(1);
+        transition: none;
+    }
+
+    #ck_menu:not(checked)+.menu {
+        position: static;
+    }
+
+    .main-nav-bar {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu-item {
+        width: fit-content;
+    }
+
+    .menu-item:hover {
+        background-color: var(--eggshell);
+        color: var(--pine-teal);
+    }
+
+    .main-header {
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        justify-items: center;
+        align-items: center;
+    }
+
+    .head-group {
+        grid-column: 1 / 5;
+        grid-row: 1;
+    }
+
+    .photo {
+        grid-column: 5 / 7;
+        grid-row: 1;
+        height: 180px;
+    }
+
+    .main-blocks {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+    }
+
+    .section-title {
+        grid-column: 1 / 3;
+    }
+
+
+
 }
