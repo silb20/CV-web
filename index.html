@@ -74,10 +74,13 @@
                 <article class="sub-block examples">
                     <h3 class="sect-subtitle"></h3>
                 </article>
+                <article class="sub-block examples">
+                    <h3 class="sect-subtitle"></h3>
+                </article>
             </section>
             <section class="main-blocks">
                 <h2 class="section-title accent-text">Experiencia</h2>
-                <article class="sub-block">
+                <article class="sub-block experience">
                     <h3 class="sect-subtitle">Profesora particular de matemáticas, física y química</h3>
                     <p class="description">Academia Bussola (2018-2024)</p>
                     <ul class="info-list">
@@ -92,7 +95,7 @@
             </section>
             <section class="main-blocks">
                 <h2 class="section-title accent-text">Sobre mi</h2>
-                <article class="sub-block">
+                <article class="sub-block sub-block-1">
                     <h3 class="sect-subtitle">Idiomas</h3>
                     <ul class="info-list">
                         <li>Español - nativo</li>
@@ -101,7 +104,15 @@
                         <li>Francés - A2</li>
                     </ul>
                 </article>
-                <article class="sub-block">
+                <article class="sub-block sub-block-2">
+                    <h3 class="sect-subtitle">Intereses personales</h3>
+                    <ul class="info-list">
+                        <li>Lectura</li>
+                        <li>Viajes</li>
+                        <li>Descubrimiento de nuevos lugares y culturas</li>
+                    </ul>
+                </article>
+                <article class="sub-block sub-block-3">
                     <h3 class="sect-subtitle">Habilidades</h3>
                     <ul class="info-list">
                         <li>Microsoft 365 y Google Workspace</li>
@@ -124,15 +135,16 @@
             <section class="main-blocks">
                 <h2 class="section-title accent-text">Contacto</h2>
                 <article class="sub-block">
-                    <form action="#" method="get">
+                    <form action="https://api.staticforms.dev/submit" method="POST">
+                        <input type="hidden" name="apiKey" value="sf_f0842c5fe74601385ddb6d53">
                         <fieldset class="cont-flex-row">
                             <div class="form-block cont-flex-col">
                                 <label for="f_nombre">Nombre</label>
-                                <input type="text" name="f_nombre" id="f_nombre">
+                                <input type="text" name="f_nombre" id="f_nombre" required>
                             </div>
                             <div class="form-block cont-flex-col">
                                 <label for="f_apellidos">Apellidos</label>
-                                <input type="text" name="f_apellidos" id="f_apellidos">
+                                <input type="text" name="f_apellidos" id="f_apellidos" required>
                             </div>
                             <div class="form-block cont-flex-col">
                                 <label for="f_telefono">Telefono</label>
@@ -140,12 +152,12 @@
                             </div>
                             <div class="form-block cont-flex-col">
                                 <label for="f_mail">e-mail</label>
-                                <input type="email" name="f_mail" id="f_mail">
+                                <input type="email" name="f_mail" id="f_mail" required>
                             </div>
                             <div class="form-block cont-flex-col comment">
                                 <p>Comentario</p>
                                 <textarea name="f_comment" id="f_comment"
-                                    placeholder="Escribe aquí tu comment"></textarea>
+                                    placeholder="Escribe aquí tu comment" required></textarea>
                             </div>
                             <div class="form-block">
                                 <input type="submit" value="Enviar" class="boton">
