@@ -140,29 +140,34 @@
                 <h2 class="section-title accent-text">Contacto</h2>
                 <div class="main-blocks">
                     <article class="sub-block contact-form">
-                        <form action="https://api.staticforms.dev/submit" method="POST">
+                        <form action="https://api.staticforms.dev/submit" method="POST" id="contact-form">
                             <input type="hidden" name="apiKey" value="sf_f0842c5fe74601385ddb6d53">
                             <fieldset class="grid">
                                 <div class="form-block">
-                                    <label for="f_nombre" class="form-label">Nombre</label>
-                                    <input type="text" name="f_nombre" id="f_nombre" required>
+                                    <label for="f_name" class="form-label">Nombre</label>
+                                    <input type="text" name="f_name" id="f_name" required>
+                                    <p id="f_name-error"></p>
                                 </div>
                                 <div class="form-block">
-                                    <label for="f_apellidos" class="form-label">Apellidos</label>
-                                    <input type="text" name="f_apellidos" id="f_apellidos" required>
+                                    <label for="f_surname" class="form-label">Apellidos</label>
+                                    <input type="text" name="f_surname" id="f_surname" required>
+                                    <p id="f_surname-error"></p>
                                 </div>
                                 <div class="form-block">
-                                    <label for="f_telefono" class="form-label">Telefono</label>
-                                    <input type="tel" name="f_telefono" id="f_telefono">
+                                    <label for="f_phone" class="form-label">Telefono</label>
+                                    <input type="tel" name="f_phone" id="f_phone" required>
+                                    <p id="f_phone-error"></p>
                                 </div>
                                 <div class="form-block">
-                                    <label for="f_mail" class="form-label">e-mail</label>
-                                    <input type="email" name="f_mail" id="f_mail" required>
+                                    <label for="f_email" class="form-label">e-mail</label>
+                                    <input type="email" name="f_email" id="f_email" required>
+                                    <p id="f_email-error"></p>
                                 </div>
                                 <div class="form-block comment">
                                     <p class="form-label">Comentario</p>
                                     <textarea name="f_comment" id="f_comment"
-                                        placeholder="Escribe aquí tu mensaje" required></textarea>
+                                    placeholder="Escribe aquí tu mensaje" required></textarea>
+                                    <p id="f_comment-error"></p>
                                 </div>
                                 <div class="form-block">
                                     <button type="submit" id="button_submit">Enviar</button>
@@ -172,11 +177,11 @@
                     </article>
                 </div>
             </section>
-
         </main>
         <footer></footer>
     </div>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
