@@ -383,6 +383,7 @@ fieldset {
 }
 
 @media (min-width: 1200px) {
-    .main-blocks {
+    .projects {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
