@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Info website</title>
+    <title>CV Silvia Beut</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -14,19 +14,19 @@
 </head>
 
 <body>
-    <div class="contenedor">
+    <div class="contenedor" id="page-top">
         <header class="first-header">
-            <h1 class="title-site">Silvia Beut</h1>
+            <h1 class="title-site"><a href="#page-top" class="main_link" title="Volver a inicio">Silvia Beut</a></h1>
             <div class="navegacion">
                 <label for="ck_menu" class="menu-icon"><span class="fa-solid fa-bars"></span></label>
                 <input type="checkbox" name="ck_menu" id="ck_menu">
                 <nav class="menu">
                     <ul class="main-nav-bar">
-                        <li><a href="education-experience.html" class="menu-item">Educación</a></li>
-                        <li><a href="examples.html" class="menu-item">Proyectos</a></li>
-                        <li><a href="education-experience.html" class="menu-item">Experiencia</a></li>
-                        <li><a href="about-me.html" class="menu-item">Sobre mi</a></li>
-                        <li><a href="contact.html" class="menu-item">Contacto</a></li>
+                        <li><a href="#educacion" class="menu-item">Educación</a></li>
+                        <li><a href="#proyectos" class="menu-item">Proyectos</a></li>
+                        <li><a href="#experiencia" class="menu-item">Experiencia</a></li>
+                        <li><a href="#sobre_mi" class="menu-item">Sobre mi</a></li>
+                        <li><a href="#contacto" class="menu-item">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
@@ -41,7 +41,7 @@
                 </div>
             </header>
             <section class="main-section">
-                <h2 class="section-title accent-text">Educación</h2>
+                <h2 class="section-title accent-text" id="educacion">Educación</h2>
                 <div class="main-blocks">
                     <article class="sub-block">
                         <h3 class="sect-subtitle">Confección y publicación de páginas web</h3>
@@ -66,28 +66,36 @@
                 </div>
             </section>
             <section class="main-section">
-                <h2 class="section-title accent-text">Ejemplos de proyectos</h2>
+                <h2 class="section-title accent-text" id="proyectos">Ejemplos de proyectos</h2>
                 <div class="main-blocks projects">
-                    <article class="sub-block examples">
-                        <img src="imgs/juego_ahorcado_MUESTRA.PNG" alt="muestra juego ahorcado" class="preview">
-                        <h3 class="sect-subtitle example-subtitle">Juego del ahorcado</h3>
+                    <article class="sub-block examples" id="ahorcado">
+                        <a href="projects.html?url=1">
+                            <img src="imgs/juego_ahorcado_MUESTRA.PNG" alt="muestra juego ahorcado" class="preview">
+                            <h3 class="sect-subtitle example-subtitle">Juego del ahorcado</h3>
+                        </a>
                     </article>
-                    <article class="sub-block examples">
-                        <img src="imgs/calendario_MUESTRA.png" alt="muestra calendario" class="preview">
-                        <h3 class="sect-subtitle example-subtitle">Calendario 2026</h3>
+                    <article class="sub-block examples" id="calendario">
+                        <a href="projects.html?url=2">
+                            <img src="imgs/calendario_MUESTRA.png" alt="muestra calendario" class="preview">
+                            <h3 class="sect-subtitle example-subtitle">Calendario 2026</h3>
+                        </a>
                     </article>
-                    <article class="sub-block examples">
-                        <img src="imgs/web_completa_MUESTRA.png" alt="muestra calendario" class="preview">
-                        <h3 class="sect-subtitle example-subtitle">Web completa</h3>
+                    <article class="sub-block examples" id="web-completa">
+                        <a href="projects.html?url=3">
+                            <img src="imgs/web_completa_MUESTRA.png" alt="muestra calendario" class="preview">
+                            <h3 class="sect-subtitle example-subtitle">Web completa</h3>
+                        </a>
                     </article>
-                    <article class="sub-block examples">
-                        <img src="imgs/movimiento_muestra.png" alt="muestra calendario" class="preview">
-                        <h3 class="sect-subtitle example-subtitle">Movimiento con JavaScript</h3>
+                    <article class="sub-block examples" id="movimiento">
+                        <a href="projects.html?url=4">
+                            <img src="imgs/movimiento_muestra.png" alt="muestra calendario" class="preview">
+                            <h3 class="sect-subtitle example-subtitle">Movimiento con JavaScript</h3>
+                        </a>
                     </article>
                 </div>
             </section>
             <section class="main-section">
-                <h2 class="section-title accent-text">Experiencia</h2>
+                <h2 class="section-title accent-text" id="experiencia">Experiencia</h2>
                 <div class="main-blocks">
                     <article class="sub-block experience">
                         <h3 class="sect-subtitle">Profesora particular de matemáticas, física y química</h3>
@@ -104,7 +112,7 @@
                 </div>
             </section>
             <section class="main-section">
-                <h2 class="section-title accent-text">Sobre mi</h2>
+                <h2 class="section-title accent-text" id="sobre_mi">Sobre mi</h2>
                 <div class="main-blocks">
                     <article class="sub-block sub-block-1">
                         <h3 class="sect-subtitle">Idiomas</h3>
@@ -141,7 +149,7 @@
                 </div>
             </section>
             <section class="main-section">
-                <h2 class="section-title accent-text">Contacto</h2>
+                <h2 class="section-title accent-text" id="contacto">Contacto</h2>
                 <div class="main-blocks">
                     <article class="sub-block contact-form">
                         <form action="https://api.staticforms.dev/submit" method="POST" id="contact-form">

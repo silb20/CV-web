@@ -1,3 +1,5 @@
+////////   VALIDACION DE FORMULARIO   //////////////
+
 //DOM ELEMENTS
 
 const NAME = document.getElementById('f_name');
@@ -109,5 +111,3 @@ FORM.addEventListener('submit', function (event) {
         event.preventDefault();
     }
 });
-
-

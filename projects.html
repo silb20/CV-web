@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Silvia Beut</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/216960cfff.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --onyx: #121619;
+            --pine-teal: #2D4739;
+            --sea-green: #09814A;
+            --eggshell: #FAF3DD;
+            --ghost-white: #F6F8FF;
+            --ash-grey: #CBD4C2;
+            --ash-grey-opacity: #cbd4c2e0;
+            --porcelain: #F5F7F3;
+            --round-corner: .5rem;
+            --border-size: 3px;
+            --main-padding: 1rem;
+        }
+
+        .main-section {
+            border: none;
+        }
+
+        #insert {
+            margin: 1rem auto;
+            border: 1px solid var(--ash-grey);
+            border-radius: var(--round-corner);
+            width: 100%;
+            aspect-ratio: 3 / 2;
+            object-fit: contain;
+            max-width: 1200px;
+            display: block;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 480px));
+            gap: .5rem;
+        }
+
+        .examples {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .example-subtitle {
+            font-size: 1rem;
+            padding: .2rem;
+        }
+
+        @media (min-width:700px) {
+            .examples {
+                width: 100%;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .projects {
+                grid-template-columns: repeat(4, 1fr);
+                width: 100%;
+                max-width: 1680px;
+            }
+
+            .examples {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor" id="page-top">
+        <header class="first-header">
+            <h1 class="title-site"><a href="index.html" class="main_link" title="Volver a inicio">Silvia Beut</a></h1>
+            <div class="navegacion">
+                <label for="ck_menu" class="menu-icon"><span class="fa-solid fa-bars"></span></label>
+                <input type="checkbox" name="ck_menu" id="ck_menu">
+                <nav class="menu">
+                    <ul class="main-nav-bar">
+                        <li><a href="index.html#educacion" class="menu-item">Educación</a></li>
+                        <li><a href="index.html#proyectos" class="menu-item">Proyectos</a></li>
+                        <li><a href="index.html#experiencia" class="menu-item">Experiencia</a></li>
+                        <li><a href="index.html#sobre_mi" class="menu-item">Sobre mi</a></li>
+                        <li><a href="index.html#contacto" class="menu-item">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="main-section">
+                <iframe id="insert"></iframe>
+
+                <div class="main-blocks projects">
+                    <article class="sub-block examples" id="ahorcado">
+                        <img src="imgs/juego_ahorcado_MUESTRA.PNG" alt="muestra juego ahorcado" class="preview">
+                        <h3 class="sect-subtitle example-subtitle">Juego del ahorcado</h3>
+                    </article>
+                    <article class="sub-block examples" id="calendario">
+                        <img src="imgs/calendario_MUESTRA.png" alt="muestra calendario" class="preview">
+                        <h3 class="sect-subtitle example-subtitle">Calendario 2026</h3>
+                    </article>
+                    <article class="sub-block examples" id="web-completa">
+                        <img src="imgs/web_completa_MUESTRA.png" alt="muestra calendario" class="preview">
+                        <h3 class="sect-subtitle example-subtitle">Web completa</h3>
+                    </article>
+                    <article class="sub-block examples" id="movimiento">
+                        <img src="imgs/movimiento_muestra.png" alt="muestra calendario" class="preview">
+                        <h3 class="sect-subtitle example-subtitle">Movimiento con JavaScript</h3>
+                    </article>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+
+    <script>
+        let oculta = window.location.search;
+        let params = new URLSearchParams(oculta);
+        let url = params.get("url");
+        let link;
+
+        const AHORCADO = document.getElementById('ahorcado');
+        const CALENDARIO = document.getElementById('calendario');
+        const WEB = document.getElementById('web-completa');
+        const MOVIMIENTO = document.getElementById('movimiento');
+
+
+        switch (url) {
+            case '1':
+                link = 'https://silb20.github.io/juego_ahorcado/';
+                console.log('caso1')
+                break;
+            case '2':
+                link = 'https://silb20.github.io/calendario/';
+                break;
+            case '3':
+                link = 'https://silb20.github.io/web-completa/';
+                break;
+            case '4':
+                link = 'https://silb20.github.io/movimiento/';
+                break;
+            default:
+                link = '';
+                break;
+        }
+
+        console.log(link)
+
+        document.getElementById('insert').src = link;
+
+        AHORCADO.onclick = () => {
+            document.getElementById('insert').src = 'https://silb20.github.io/juego_ahorcado/';
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+        }
+        CALENDARIO.onclick = () => {
+            document.getElementById('insert').src = 'https://silb20.github.io/calendario/';
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+        }
+        WEB.onclick = () => {
+            document.getElementById('insert').src = 'https://silb20.github.io/web-completa/';
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+        }
+        MOVIMIENTO.onclick = () => {
+            document.getElementById('insert').src = 'https://silb20.github.io/movimiento/';
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

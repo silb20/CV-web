@@ -74,6 +74,12 @@ img {
     z-index: 999;
 }
 
+.main_link {
+    color: var(--porcelain);
+    text-decoration: none;
+    display: block;
+}
+
 .navegacion {
     display: flex;
     flex-direction: row-reverse;
@@ -179,6 +185,7 @@ img {
 .section-title {
     color: var(--pine-teal);
     text-align: center;
+    scroll-margin-top: 70px;
 }
 
 .sub-block {
@@ -236,7 +243,7 @@ img {
 	width: 100%;
 	text-align: center;
 	background-color: var(--ash-grey-opacity);
-	padding: 1.5rem;
+	padding: 1.5rem 0;
     color: var(--pine-teal);
     text-shadow: 0 0 3px var(--porcelain);
     font-size: 1.4rem;
