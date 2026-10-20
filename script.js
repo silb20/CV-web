@@ -111,3 +111,11 @@ FORM.addEventListener('submit', function (event) {
         event.preventDefault();
     }
 });
+
+////// AUTO HIDE MENU  //////
+const ITEMS = document.querySelectorAll('.menu-item');
+const CK_MENU = document.getElementById('ck_menu');
+
+for (const element of ITEMS) {
+    element.onclick = () => {CK_MENU.checked = false}    
+}
