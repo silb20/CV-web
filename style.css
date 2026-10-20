@@ -26,6 +26,7 @@
     --eggshell: #FAF3DD;
     --ghost-white: #F6F8FF;
     --ash-grey: #CBD4C2;
+    --ash-grey-opacity: #cbd4c2e0;
     --porcelain: #F5F7F3;
     --round-corner: .5rem;
     --border-size: 3px;
@@ -44,7 +45,7 @@
 img {
     max-width: 100%;
     height: auto;
-    width: 100px;
+    display: block;
 }
 
 .contenedor {
@@ -70,6 +71,7 @@ img {
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 999;
 }
 
 .navegacion {
@@ -152,7 +154,6 @@ img {
 }
 
 .photo {
-    display: block;
     margin: 1rem auto;
     height: 120px;
     width: auto;
@@ -213,6 +214,34 @@ img {
     max-width: 600px;
     margin: 1rem auto;
 }
+
+.examples {
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 3 / 2;
+    max-width: 500px;
+    margin: 1rem auto;
+    cursor: pointer;
+}
+
+.preview {
+    height: 100%;
+    position: absolute;
+}
+
+.example-subtitle {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	background-color: var(--ash-grey-opacity);
+	padding: 1.5rem;
+    color: var(--pine-teal);
+    text-shadow: 0 0 3px var(--porcelain);
+    font-size: 1.4rem;
+}
+
 
 /* FORM */
 
